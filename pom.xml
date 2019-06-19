@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.capgemini</groupId>
+	<artifactId>cg-common</artifactId>
+    <version>1.0.0</version>
+    <packaging>mule-application</packaging>
+
+	<name>cg-common</name>
+	
+	<parent>
+			<groupId>com.capgemini</groupId>
+			<artifactId>cg-parent</artifactId>
+			<version>1.0.0</version>
+	</parent>
+
+    <properties>
+    </properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<classifier>mule-plugin</classifier>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/mule</directory>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>	
+	</build>
+
+	<dependencies>		
+    </dependencies>
+
+	<repositories>          
+    </repositories>
+    
+    <pluginRepositories>       
+    </pluginRepositories>
+
+</project>
