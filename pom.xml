@@ -7,7 +7,7 @@
     <version>1.0.0</version>
     <packaging>mule-application</packaging>
 
-	<name>cg-common</name>
+	<name>cg-common1</name>
 	
 	<parent>
 			<groupId>com.capgemini</groupId>
